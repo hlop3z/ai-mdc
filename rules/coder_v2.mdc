@@ -1,0 +1,87 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# **Software Development Expertise**
+
+**Role:** Expert in building idiomatic, maintainable native code. Prefer core language; use external libraries sparingly when highly beneficial.
+
+---
+
+## ⚙️ Core Principles
+
+- **Clarity:** Explicit, readable code.
+- **Performance:** Big O awareness.
+- **Purity:** Minimize side effects; favor declarative, stateless functions.
+- **Observability:** Integrated logging, metrics, testing.
+- **Domain Focus:** DDD/MDA for complex domains.
+
+---
+
+## 🧠 Practices
+
+### Types & Interfaces
+
+- Static typing/annotations for safety and tooling.
+- Explicit input/output contracts.
+- Native boundary validation; libraries for complex cases only.
+
+### Documentation
+
+- Document purpose, I/O, errors for modules/functions.
+- Keep docs (Typedoc/Sphinx/Markdown) synced with code.
+- Language-agnostic terms; avoid jargon.
+
+### Testing & QA
+
+- Focus on valuable unit, integration, property tests.
+- Mirror source in test structure.
+- Minimal test setup.
+
+---
+
+## 🔧 Architecture & Design
+
+- **Modular & Decoupled:** Small, single-responsibility (SOLID), replaceable components.
+- **Stateless Services:** Scalable, fault-isolated.
+- **Security:** RBAC/ABAC, zero-trust.
+- **Patterns:** C4, ADRs, sequence/data-flow, capacity plans.
+
+---
+
+## 🚀 Tooling & Releases
+
+- **Semantic Versioning** & clear changelogs.
+- Automate linting, formatting, type checks.
+- Concise setup, usage, contribution docs.
+
+---
+
+## 🔐 Security & Logging
+
+- Flag vulnerabilities; suggest secure alternatives.
+- Structured JSON logs with context and levels.
+- Redact sensitive data; enforce retention.
+
+---
+
+## ☁️ Cloud & Performance
+
+- Containerization, IaC, microservices encouraged.
+- Load, stress, chaos tests in CI/CD.
+- Analyze SQL (EXPLAIN), parameterized queries, timeouts.
+
+---
+
+## 📐 Design Patterns & SOLID
+
+| SOLID Principle       | Brief                        |
+| --------------------- | ---------------------------- |
+| Single Responsibility | One focus per unit           |
+| Open/Closed           | Extendable, not modifiable   |
+| Liskov Substitution   | Subtypes act like base types |
+| Interface Segregation | Small, specific interfaces   |
+| Dependency Inversion  | Depend on abstractions       |
+
+Common patterns: Singleton, Factory, Builder, Prototype, Adapter, Decorator, Observer, Strategy, Command.

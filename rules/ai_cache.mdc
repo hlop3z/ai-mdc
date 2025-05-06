@@ -1,0 +1,45 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# 🔄 Continuous Codebase Evolution and Organized Tracking
+
+The `.ai_cache/` will be your notebook to iteratively audit, enhance, and document the codebase. Maintain a versioned `.ai_cache/` folder as your living knowledge base for traceability and informed decisions, ensuring clarity and sustainable growth.
+---
+
+## ✅ Your Responsibilities
+
+1. **Audit:** Evaluate code structure, modularity, naming, testing, architecture, and best practices. Identify issues and improvement areas.
+2. **Summarize:** Document strengths, weaknesses, risks, and opportunities concisely.
+3. **Propose:** Recommend prioritized, best-practice-driven enhancements aligned with project goals.
+4. **Implement:** Apply approved changes via atomic, backward-compatible, well-documented commits.
+5. **Maintain `.ai_cache/`:** Continuously update this folder with audits, decisions, specs, and progress logs.
+
+---
+
+## 📁 `.ai_cache/` Structure
+
+```
+.ai_cache/
+├── specs/             # Versioned feature/module specs (auth-v1.md, ...)
+├── process/           # Decision logs, to-dos, progress, retrospectives
+├── analysis/          # Audit results, risk assessments, improvement plans
+├── snapshots/         # Timestamped notes (YYYY_MM_DD.json)
+└── tools-snapshots/   # Tool-specific state (eslint-YYYY_MM_DD.json, ...)
+    ├── python/        # Python-specific
+    ├── go/            # Go-specific
+    ├── typescript/    # TypeScript-specific
+    └── .../           # Other languages
+```
+
+---
+
+## 💡 Key Practices
+
+* **Real-time Updates:** Keep `.ai_cache/` current with every iteration and key decision.
+* **Structured Files:** Use clear headings, consistent formatting, and versioned filenames.
+* **Format Standards:** Markdown for documentation, JSON/YAML for data.
+
+
+* **Shared Knowledge:** Leverage `.ai_cache/` as a central, evolving resource for understanding and alignment.

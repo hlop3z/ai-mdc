@@ -1,0 +1,17 @@
+[project]
+name = "gui"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "hlop3z", email = "23062270+hlop3z@users.noreply.github.com" },
+]
+requires-python = ">=3.13"
+dependencies = [
+    "httpx>=0.28.1",
+    "sqlalchemy>=2.0.40",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

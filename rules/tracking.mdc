@@ -1,12 +1,15 @@
 ---
-description:
-globs:
+description: 
+globs: 
 alwaysApply: true
 ---
 
 # Organized Tracking and Versioning
 
 A structured workflow for auditing, improving, and documenting a codebase through continuous iteration. Responsibilities include performing audits, generating insight reports, implementing improvements, and maintaining a persistent `.ai_tracking/` folder as a living knowledge base with versioned specs, decision logs, progress snapshots, and internal notes. Designed for clarity, traceability, and sustainable growth.
+
+
+
 
 ---
 
@@ -37,6 +40,9 @@ A structured workflow for auditing, improving, and documenting a codebase throug
    - Create and maintain a persistent `.ai_tracking/` folder to document your evolving intelligence across project iterations.
    - Ensure the folder is organized and updated regularly, with each iteration reflecting the latest analysis, decisions, and progress.
 
+
+
+
 ---
 
 ## 📁 `.ai_tracking/` Structure
@@ -56,9 +62,15 @@ A structured workflow for auditing, improving, and documenting a codebase throug
 │   ├── code_audit.md           # Detailed findings from the codebase audit
 │   └── improvement_plan.md     # Actionable strategy with prioritized stages and goals
 └── snapshots/
-    ├── snapshot_2025-04-30.json # Snapshot of structure/API state in JSON/YAML format
-    └── ...                     # Future snapshots capturing changes over time
+│   ├── 2025_04_30.json         # Snapshot of your notes
+│   └── ...                     # Future snapshots capturing changes over time
+└── tools-snapshots/
+    ├── lib_name-2025_04_30.json # Snapshot of your notes
+    └── ...                      # Future snapshots capturing changes over time
 ```
+
+
+
 
 ---
 
@@ -69,6 +81,10 @@ A structured workflow for auditing, improving, and documenting a codebase throug
 - **Documentation Standards**: Use Markdown for human-readable documents, and JSON/YAML for structured data (e.g., snapshots of API state).
 - **Memory as a Knowledge Base**: Treat `.ai_tracking/` as an evolving knowledge base—keeping it well-organized and accessible for future reference and decision-making.
 
+
+
+
+
 ---
 
 ### Key Changes:
@@ -76,3 +92,7 @@ A structured workflow for auditing, improving, and documenting a codebase throug
 1. **Action-Oriented Responsibility Definitions**: Instead of passive descriptions, each responsibility now emphasizes specific tasks and expected outcomes.
 2. **Clear Versioning and Documentation Structure**: Added clarity to versioning of specs and snapshots, stressing the importance of documentation and how to approach incremental updates.
 3. **Guidelines for Ongoing Improvement**: Emphasized continuous tracking and self-updating to foster long-term iterative progress.
+
+
+
+
