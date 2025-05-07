@@ -177,3 +177,15 @@ pdm.lock
 .playground/
 .cursor/
 .ai_tracking/
+
+# AI Files
+chroma.sqlite3
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+*.db-trace
+*.db-lock
+*.db-lock-shm
+*.db-lock-wal

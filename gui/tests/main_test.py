@@ -193,7 +193,7 @@ async def main():
         print(result)
 
         # Generate an embedding for the prompt "Hello, world!" using the 'nomic-embed-text:latest' model.
-        print("Vector Embeddings:")
+        print("\nVector Embeddings:")
         result = await test.embeddings(prompt="Hello, world!", model=embedding_model)
         print(len(result))
 
