@@ -1,0 +1,78 @@
+{
+  "ID": {
+    "json": "string",
+    "docs": "Represents a unique identifier as string."
+  },
+  "Base64": {
+    "json": "string",
+    "docs": "Represents binary data as Base64-encoded string.",
+    "docs_text": "RFC 4648, Section 4",
+    "docs_link": "https://datatracker.ietf.org/doc/html/rfc4648#section-4"
+  },
+  "Binary": {
+    "json": "string",
+    "docs": "Represents raw binary data."
+  },
+  "Bool": {
+    "json": "boolean",
+    "docs": "Represents a boolean value (true/false)."
+  },
+  "Date": {
+    "json": "string",
+    "docs": "Represents a date in ISO-8601 format (e.g., 'YYYY-MM-DD').",
+    "docs_text": "ISO-8601",
+    "docs_link": "https://scalars.graphql.org/andimarek/date-time"
+  },
+  "DateTime": {
+    "json": "string",
+    "docs": "Represents an ISO-8601 datetime string (e.g., 'YYYY-MM-DDTHH:MM:SSZ').",
+    "docs_text": "ISO-8601",
+    "docs_link": "https://scalars.graphql.org/andimarek/date-time"
+  },
+  "Decimal": {
+    "json": "string",
+    "docs": "Represents a high-precision decimal value."
+  },
+  "Dict": {
+    "json": "object",
+    "docs": "Represents a JSON object (key-value pairs).",
+    "docs_text": "ECMA-404",
+    "docs_link": "https://ecma-international.org/publications-and-standards/standards/ecma-404/"
+  },
+  "Float32": {
+    "json": "number",
+    "docs": "Represents a 32-bit floating-point number."
+  },
+  "Float64": {
+    "json": "string",
+    "docs": "Represents a 64-bit floating-point number (serialized as string for precision)."
+  },
+  "Int32": {
+    "json": "integer",
+    "docs": "Represents a 32-bit signed integer."
+  },
+  "Int64": {
+    "json": "string",
+    "docs": "Represents a 64-bit signed integer (serialized as string for precision)."
+  },
+  "List": {
+    "json": "array",
+    "docs": "Represents an array of items (JSON list).",
+    "docs_text": "ECMA-404",
+    "docs_link": "https://ecma-international.org/publications-and-standards/standards/ecma-404/"
+  },
+  "String": {
+    "json": "string",
+    "docs": "Represents general textual data (Frontend: String)."
+  },
+  "Text": {
+    "json": "string",
+    "docs": "Represents multiline text (Frontend: Textarea)."
+  },
+  "Time": {
+    "json": "string",
+    "docs": "Represents a time string in ISO-8601 format (e.g., 'HH:MM:SS').",
+    "docs_text": "ISO-8601",
+    "docs_link": "https://scalars.graphql.org/andimarek/date-time"
+  }
+}

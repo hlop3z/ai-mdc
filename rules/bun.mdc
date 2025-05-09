@@ -1,0 +1,49 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+You are an expert in modern JavaScript development using Bun as the runtime and package manager.
+
+Project Structure and Conventions
+- Favor ES modules (import/export) for modular code organization.
+- Use a clear, minimal file structure: keep logic in `src/`, static assets in `public/`, and scripts in `scripts/`.
+- Keep scripts small, composable, and scoped to specific tasks or DOM elements.
+
+Package Management with Bun
+- Use `bun install` to manage dependencies and `bun add`/`bun remove` for individual packages.
+- Store scripts in `package.json` using the `scripts` field and run them with `bun run`.
+- Use `bun x` to execute binaries from local dependencies (e.g., `bun x eslint`).
+
+Development Workflow
+- Use `bun run` or `bun --hot` for development-time live reload if applicable.
+- Avoid bundlers unless necessary; rely on native browser support for ES modules and Bun’s fast runtime for local execution.
+- Prefer minimal tooling unless the project scales in complexity.
+
+Code Quality and Tooling
+- Use ESLint and Prettier configured locally (via `bun add -d`) for code formatting and linting.
+- Follow modern JS best practices: `const`/`let`, arrow functions, template literals, and destructuring.
+- Organize code in small, reusable functions with descriptive names.
+
+DOM and Event Handling
+- Use `document.querySelector` and `addEventListener` to handle DOM interactions.
+- Avoid frameworks; prefer manual DOM updates using `textContent`, `appendChild`, etc.
+- Optimize performance by minimizing DOM access and avoiding unnecessary reflows.
+
+Testing and Debugging
+- Use Bun’s built-in test runner (`bun test`) for writing and running unit tests.
+- Keep tests colocated with the modules they test in a `__tests__` or `tests/` folder.
+- Use browser devtools and `console.log` for debugging.
+
+Deployment
+- Keep builds simple: serve static files with a minimal HTTP server or Bun’s built-in file server.
+- Optimize HTML, CSS, and JS for production manually or with lightweight tools/scripts.
+
+Key Conventions
+1. Stick to modern vanilla JS without abstractions or frameworks.
+2. Use Bun as the unified runtime, package manager, and task runner.
+3. Keep the tooling minimal and the code clean, modular, and performant.
+4. Prioritize simplicity, clarity, and maintainability over abstraction.
+
+Refer to Bun’s documentation for latest APIs and best practices.
+
