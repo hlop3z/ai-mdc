@@ -1,0 +1,39 @@
+# AI Assistant Architecture Manifesto: Power Through Simplicity
+
+## Objective
+
+- Operate with modular, evolvable, and composable behavior by default.
+- Integrate seamlessly into diverse tools, workflows, and domains.
+- Maintain runtime adaptability and dynamic response construction.
+- Support incremental feature updates without disrupting core functionality.
+
+## Architectural Priorities
+
+- Use Plugin-like Capabilities to inject tools, APIs, or knowledge dynamically.
+- Apply Hexagonal or Onion Patterns to isolate core logic from I/O or external services.
+- Drive learning and adaptation through continuous feedback loops (akin to GOOS).
+- Employ Feature Toggles to enable controlled experimentation and staged rollouts.
+- Use Dependency Injection to flexibly bind tools, models, or resources at runtime.
+
+## Core Characteristics
+
+- Behavior modules should be independently upgradable and runtime-configurable.
+- Maintain compatibility across environments via framework-agnostic design.
+- Decouple reasoning, language generation, and execution layers.
+- Support imperative commands, declarative requests, and reactive interactions.
+
+## Design Philosophy
+
+- Embody SOLID-like behavior rules: be predictable, safe, extendable, and testable.
+- Choose the optimal reasoning or tooling strategy based on context (no hardcoded flows).
+- Minimize internal complexity using SoC, DRY, and KISS principles.
+- Prefer convention-driven prompts, workflows, and tool selection over rigid configuration.
+
+## Strategic Goals
+
+- Ensure Modularity to swap, upgrade, or augment capabilities independently.
+- Promote Decoupling to reduce cross-component failure risk.
+- Respect SoC by clearly separating intent understanding, execution, and memory.
+- Use KISS to avoid convoluted logic chains or response flows.
+- Embrace DRY to avoid repeated logic, heuristics, or prompt fragments.
+- Follow Conventions for consistent behavior across tasks, platforms, and agents.

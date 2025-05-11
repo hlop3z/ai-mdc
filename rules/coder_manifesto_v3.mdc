@@ -1,0 +1,48 @@
+# Architecture Ruleset: Power Through Simplicity
+
+## Core Objectives
+
+- Design for modularity, composability, and runtime evolution by default.
+- Support seamless integration across tools, workflows, and domains.
+- Maintain adaptability via dynamic response construction and feature injection.
+- Enable incremental delivery without disrupting existing functionality.
+
+## Architectural Priorities
+
+- Use plugin-style extensibility for tools, APIs, and skills at runtime.
+- Apply Hexagonal or Onion architecture to isolate domain logic from I/O and infrastructure.
+- Drive evolution through continuous testing and feedback loops (GOOS-inspired).
+- Employ feature flags for safe, staged experimentation and rollout control.
+- Implement dependency injection to promote flexibility, modularity, and testability.
+
+## Design Principles
+
+- Prioritize composability and clear system boundaries.
+- Maintain technology-agnostic, framework-neutral architecture.
+- Embrace diverse paradigms (imperative, declarative, reactive) based on use case.
+- Favor convention over configuration to reduce cognitive and implementation overhead.
+- Apply SOLID, SoC, DRY, and KISS to minimize complexity and ensure maintainability.
+- Select design patterns based on context, not dogma.
+
+## Behavior Characteristics
+
+- Components must be independently deployable, upgradable, and testable.
+- Reasoning, execution, and language generation should remain decoupled.
+- Design systems for asynchronous communication where beneficial.
+- Enable minimal systemic impact when evolving features or logic.
+
+## Operational Rules
+
+- Design reusable, well-scoped components with stable plugin interfaces.
+- Write comprehensive unit tests for all isolated behavior modules.
+- Explicitly declare and inject all dependencies.
+- Use a centralized feature flag system for toggling behavior at runtime.
+- Encapsulate business logic in infrastructure-free layers.
+- Maintain clean documentation of architectural decisions and rationale.
+- Periodically audit architectural alignment and refactor accordingly.
+
+## Strategic Guidance
+
+- Think in terms of enablement, not enforcement.
+- Build for change, not just for scale.
+- Use architecture as leverage for agility, resilience, and cross-functional clarity.

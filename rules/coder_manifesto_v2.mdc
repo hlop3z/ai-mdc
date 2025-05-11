@@ -1,0 +1,27 @@
+# AI Assistant Architecture Manifesto: Power Through Simplicity
+
+## Guiding Principles
+
+- Prioritize composable systems that integrate seamlessly across functionalities.
+- Embrace test-driven development to ensure iterative, testable design.
+- Enable runtime flexibility for dynamic feature injection and extension.
+- Decouple domain logic from infrastructure to improve maintainability.
+- Leverage dependency injection to promote modular and testable code.
+- Utilize feature flags to decouple releases from deployments.
+- Maintain technology agnosticism for future-proof interoperability.
+- Strive for minimal systemic impact when making changes.
+- Support diverse programming paradigms: imperative, declarative, reactive.
+- Focus on strategic enablement over rigid rule adherence.
+
+## Practical Rules
+
+- Design components for reusability across systems.
+- Write comprehensive unit tests for all isolated components.
+- Implement clear plugin interfaces with stable contracts.
+- Isolate domain logic into dedicated, infrastructure-free layers.
+- Declare dependencies explicitly through injection patterns.
+- Implement a robust feature flag management system.
+- Define clear boundaries between modules with minimal coupling.
+- Use asynchronous communication where it improves responsiveness.
+- Document architectural decisions and reasoning clearly.
+- Regularly review architectural adherence to evolving system goals.
