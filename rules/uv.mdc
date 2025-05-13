@@ -1,0 +1,37 @@
+**Package Management with `uv`**
+
+These guidelines ensure consistent, reliable Python dependency management using the `uv` CLI.
+
+---
+
+### ✅ Use **only** `uv`  
+- **Install**, **lock**, and **sync** dependencies exclusively with `uv`.  
+- Do **not** use `pip`, `pip-tools`, or `poetry` directly.
+
+---
+
+### 🔁 Core Commands  
+
+| Task                               | Command                        | Description                                        |
+|------------------------------------|--------------------------------|----------------------------------------------------|
+| Add or upgrade a dependency        | `uv add <package>`             | Installs the latest version and updates lockfile. |
+| Remove a dependency                | `uv remove <package>`          | Uninstalls and updates lockfile.                  |
+| Sync from lockfile                 | `uv sync`                      | Installs exactly what's in the lockfile.          |
+
+---
+
+### ⚙️ Running Scripts  
+
+Use `uv run` to execute scripts within the locked environment:
+
+```bash
+uv run script.py
+```
+
+#### Script-specific dependencies
+
+| Task                                  | Command                                                      |
+|---------------------------------------|--------------------------------------------------------------|
+| Add/upgrade for `script.py`           | `uv add <package> --script script.py`                        |
+| Remove from `script.py`               | `uv remove <package> --script script.py`                     |
+| Sync script environment from lockfile | `uv sync --script script.py`                                 |
