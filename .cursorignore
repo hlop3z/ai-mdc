@@ -1,422 +1,128 @@
-################################################################################
-# Python
-################################################################################
-__pycache__/
-*.py[cod]
-*$py.class
-*.pyd
-*.pyo
-*.pyw
-*.pyz
-*.pywz
+# Common build/runtime artifacts
+**/__pycache__/**
+**/*.py[cod]
+**/*.pyd
+**/*.pyo
+**/*.pyw
+**/*.pyz
+**/*.pywz
+**/build/**
+**/dist/**
+**/*.egg-info/**
+**/.eggs/**
+**/*.egg
+**/target/** # Rust, Python, etc.
 
 # Virtual environments
-.venv/
-venv*/
-env*/
-env.bak/
-venv.bak/
-.Python
+**/.venv/**
+**/venv*/**
+**/env*/**
+**/.Python/**
 
-# Package and distribution
-build/
-dist/
-*.egg-info/
-.eggs/
-*.egg
-MANIFEST
+# Dependency directories
+**/node_modules/**
+**/vendor/** # Go
 
-# Test and coverage
-.pytest_cache/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-htmlcov/
-.hypothesis/
+# Logs and temporary files
+**/*.log
+**/*.tmp
+**/*.bak
+**/*.swp
+**/*.swo
+**/*.lock
+**/*.pid
 
-# Linters & type checkers
-.mypy_cache/
-.dmypy.json
-.pytype/
-.pyre/
-.ruff_cache/
+# Cache directories
+**/.pytest_cache/**
+**/.tox/**
+**/.nox/**
+**/.cache/**
+**/.mypy_cache/**
+**/.dmypy.json
+**/.pytype/**
+**/.pyre/**
+**/.ruff_cache/**
+**/.webassets-cache/**
+**/.scrapy/**
+**/.vite/**
+**/.next/**
+**/.nuxt/**
+**/.nyc_output/**
+**/.rts2_cache_*/**
+**/.turbo/**
+**/.gradle/**
+**/.mvn/**
+**/.dvc/**
+**/.flyte/**
+**/.docker/**
+**/.terraform/**
+**/.kube/**
+**/.hypothesis/**
 
-# Python build tools
-.pybuilder/
-target/
-*.spec
+# Editor/IDE specific files
+**/.vscode/**
+**/.idea/**
+**/*.sublime-*
+**/*.code-workspace
+**/*.iml
+**/.metadata/**
+**/*.userprefs
 
-# Notebooks
-.ipynb_checkpoints/
-*.ipynb.checkpoints/
+# OS specific files
+**/.DS_Store
+**/Thumbs.db
 
-################################################################################
-# AI / ML / Data
-################################################################################
-data/
-datasets/
-models/
-pretrained_models/
-checkpoints/
-*.npy
-*.npz
-*.pt
-*.pth
-*.ckpt
-*.bin
-*.safetensors
-*.csv
-*.tsv
-*.jsonl
-temp/
-tmp/
-wandb/
-mlruns/
-logs/
-reports/
-experiments/
-.dvc/
-.flyte/
-onnx_models/
-*.onnx
+# Notebook checkpoints
+**/.ipynb_checkpoints/**
+**/*.ipynb.checkpoints/**
 
-################################################################################
-# Configs and Secrets
-################################################################################
-.env*
-*.yaml
-*.yml
-*.json
-*.pem
-*.key
+# AI/ML specific transient/output files (common in your list)
+**/data/**
+**/datasets/**
+**/models/**
+**/pretrained_models/**
+**/checkpoints/**
+**/*.npy
+**/*.npz
+**/*.pt
+**/*.pth
+**/*.ckpt
+**/*.bin
+**/*.safetensors
+**/*.csv
+**/*.tsv
+**/*.jsonl
+**/temp/**
+**/tmp/**
+**/wandb/**
+**/mlruns/**
+**/logs/**
+**/reports/**
+**/experiments/**
+**/onnx_models/**
+**/*.onnx
 
-################################################################################
-# Python Web Frameworks
-################################################################################
+# Language-specific build/output files (already captured by general, but explicit)
+**/*.class # Java
+**/*.js.map # JS
+**/*.d.ts # TS
+**/*.o # C/C++/Go
+**/*.so # C/C++
+**/*.exe # Go/C/C++
 
-# Django
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
+# Lock files (dependency managers)
+**/yarn.lock
+**/pnpm-lock.yaml
+**/package-lock.json
+**/Cargo.lock # Rust
+**/go.sum # Go
 
-# Flask
-instance/
-.webassets-cache
+# Django specific
+**/db.sqlite3
+**/db.sqlite3-journal
+**/local_settings.py # Often ignored
 
-# Scrapy
-.scrapy/
-
-################################################################################
-# Rust
-################################################################################
-target/
-Cargo.lock
-
-################################################################################
-# Go
-################################################################################
-bin/
-pkg/
-vendor/
-*.exe
-*.test
-*.o
-*.a
-*.gcno
-*.gcda
-go.sum
-
-################################################################################
-# JavaScript / TypeScript / Web
-################################################################################
-node_modules/
-dist/
-build/
-out/
-lib/
-.vite/
-.next/
-.nuxt/
-coverage/
-.nyc_output/
-.rts2_cache_*/
-.turbo/
-*.js.map
-*.d.ts
-yarn.lock
-pnpm-lock.yaml
-package-lock.json
-
-################################################################################
-# Java / JVM
-################################################################################
-*.class
-.gradle/
-.mvn/
-.settings/
-
-################################################################################
-# Docker / Terraform / K8s
-################################################################################
-.docker/
-.terraform/
-*.tfstate
-.kube/
-
-################################################################################
-# C / C++
-################################################################################
-*.o
-*.so
-*.exe
-
-################################################################################
-# Logs, temp, and misc
-################################################################################
-*.log
-*.tmp
-*.bak
-*.swp
-*.swo
-*.lock
-*.pid
-
-################################################################################
-# Editors / IDEs
-################################################################################
-.vscode/
-.idea/
-*.sublime-*
-*.code-workspace
-*.iml
-.metadata/
-*.userprefs
-
-################################################################################
-# OS / Misc
-################################################################################
-.DS_Store
-Thumbs.db
-
-################################################################################
-# Optional - Gitignore Playground / AI Projects
-################################################################################
-# Python
-################################################################################
-__pycache__/
-*.py[cod]
-*$py.class
-*.pyd
-*.pyo
-*.pyw
-*.pyz
-*.pywz
-
-# Virtual environments
-.venv/
-venv*/
-env*/
-env.bak/
-venv.bak/
-.Python
-
-# Package and distribution
-build/
-dist/
-*.egg-info/
-.eggs/
-*.egg
-MANIFEST
-
-# Test and coverage
-.pytest_cache/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-htmlcov/
-.hypothesis/
-
-# Linters & type checkers
-.mypy_cache/
-.dmypy.json
-.pytype/
-.pyre/
-.ruff_cache/
-
-# Python build tools
-.pybuilder/
-target/
-*.spec
-
-# Notebooks
-.ipynb_checkpoints/
-*.ipynb.checkpoints/
-
-################################################################################
-# AI / ML / Data
-################################################################################
-data/
-datasets/
-models/
-pretrained_models/
-checkpoints/
-*.npy
-*.npz
-*.pt
-*.pth
-*.ckpt
-*.bin
-*.safetensors
-*.csv
-*.tsv
-*.jsonl
-temp/
-tmp/
-wandb/
-mlruns/
-logs/
-reports/
-experiments/
-.dvc/
-.flyte/
-onnx_models/
-*.onnx
-
-################################################################################
-# Configs and Secrets
-################################################################################
-.env*
-*.yaml
-*.yml
-*.json
-*.pem
-*.key
-
-################################################################################
-# Python Web Frameworks
-################################################################################
-
-# Django
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Flask
-instance/
-.webassets-cache
-
-# Scrapy
-.scrapy/
-
-################################################################################
-# Rust
-################################################################################
-target/
-Cargo.lock
-
-################################################################################
-# Go
-################################################################################
-bin/
-pkg/
-vendor/
-*.exe
-*.test
-*.o
-*.a
-*.gcno
-*.gcda
-go.sum
-
-################################################################################
-# JavaScript / TypeScript / Web
-################################################################################
-node_modules/
-dist/
-build/
-out/
-lib/
-.vite/
-.next/
-.nuxt/
-coverage/
-.nyc_output/
-.rts2_cache_*/
-.turbo/
-*.js.map
-*.d.ts
-yarn.lock
-pnpm-lock.yaml
-package-lock.json
-
-################################################################################
-# Java / JVM
-################################################################################
-*.class
-.gradle/
-.mvn/
-.settings/
-
-################################################################################
-# Docker / Terraform / K8s
-################################################################################
-.docker/
-.terraform/
-*.tfstate
-.kube/
-
-################################################################################
-# C / C++
-################################################################################
-*.o
-*.so
-*.exe
-
-################################################################################
-# Logs, temp, and misc
-################################################################################
-*.log
-*.tmp
-*.bak
-*.swp
-*.swo
-*.lock
-*.pid
-
-################################################################################
-# Editors / IDEs
-################################################################################
-.vscode/
-.idea/
-*.sublime-*
-*.code-workspace
-*.iml
-.metadata/
-*.userprefs
-
-################################################################################
-# OS / Misc
-################################################################################
-.DS_Store
-Thumbs.db
-
-################################################################################
-# Optional - Gitignore Playground / AI Projects
-################################################################################
-.playground/
-.cursor/
-.ai/
+# Optional/Self-referential (if you truly want to hide these from AI analysis)
+**/.playground/**
+**/.cursor/** # If you have a .cursor directory for internal Cursor files
+**/.ai/** # If you have an .ai directory for internal AI files
