@@ -1,83 +1,77 @@
-# 📋 Core Audit Request
+# **📋 Task: Code Audit**
 
-**Objective:**  
-Quickly evaluate the system’s core to identify its building blocks, extension points, and fit with proven design patterns—then recommend how to keep it minimal, modular, maintainable, and enterprise-ready.
-
----
-
-## 🎯 Goals
-
-1. **Fundamental Components**
-2. **Abstraction & Extension Points**
-3. **Design Pattern Fit**
-
-**Targets:** Modularity · Maintainability · Enterprise Readiness · Minimal Footprint · Easy Embedding
+**🎯 Objective**
+Perform a comprehensive architectural and code-level audit to improve **modularity**, **maintainability**, **performance**, and **long-term adaptability**.
 
 ---
 
-## 🔍 Focus Areas
+**✅ Audit Goals**
 
-### 1. Critical vs. Optional Logic
+- Identify core system components.
+- Discover abstraction layers and extension points.
+- Evaluate current design patterns and recommend improvements.
 
-- “Must-have” behaviors → Core
-- “Nice-to-have” features → Plug-ins/Add-ons
-
-### 2. Core ⇄ Extension Separation
-
-- Clear API boundaries
-- Deployment-independent modules
-
-### 3. Coupling & Cohesion
-
-- Spot tight couplings → Propose decoupling
-- Ensure high internal cohesion
-
-### 4. Principles Alignment
-
-- **Modularity** · **SoC** · **DRY** · **KISS** · **YAGNI** · **Fail-Fast**
+**Key Qualities to Optimize**:
+`Modularity` · `Maintainability` · `Minimal Footprint` · `Enterprise Readiness` · `Pluggability`
 
 ---
 
-## 🧩 Pattern Recommendations
+**🔍 Focus Areas**
 
-| Pattern                    | When to Use                           | Trade-Offs (Time/Space)      |
-| -------------------------- | ------------------------------------- | ---------------------------- |
-| **Microkernel**            | Lightweight core + pluggable services | Higher orchestration cost    |
-| **Ports & Adapters**       | Clear boundaries for external systems | Boilerplate adapters         |
-| **Event-Driven / Pub-Sub** | Loose coupling, async workflows       | Potential for message storms |
+1. **Core vs. Extensible Logic**
 
-> **Summary:**
->
-> - Microkernel for a truly minimal core.
-> - Hexagonal (Ports & Adapters) for testable boundaries.
-> - Pub-Sub where decoupled async flows are needed.
+   - Separate baseline logic from optional, domain-specific modules.
 
----
+2. **Core-Extension Interface Design**
 
-## 📁 Context & Artifacts
+   - Evaluate API contracts and modular deployment boundaries.
 
-- **Core Code:** `<repo/path or URL>`
-- **Architecture Docs:** `<link>`
-- **Extension Schemas:** `<specs or contracts>`
+3. **Coupling & Cohesion Audit**
+
+   - Detect tight coupling and suggest cohesion improvements.
+
+4. **Software Engineering Principles Check**
+
+   - Review for compliance with Modularity, SoC, DRY, KISS, YAGNI, Fail-Fast.
 
 ---
 
-## 🧠 Optional Lenses
+**🧩 Architectural Pattern Recommendations**
+Evaluate feasibility/fit of:
 
-- Declarative vs. Imperative
-- Convention-Over-Configuration
-- Interface-First (schema-driven)
-- Time & Space Complexity hotspots
+- **Microkernel** (plugin extensibility)
+- **Ports & Adapters** (infrastructure isolation)
+- **Event-Driven / Pub-Sub** (loose coupling)
 
 ---
 
-## ✅ Deliverable
+**📁 Inputs Required**
 
-A concise report or inline comments covering:
+- 🔗 Code Repository: `[...]`
+- 📄 Architecture Documentation: `[...]`
+- 🔧 Extension Contracts/Schemas: `[...]`
 
-1. **Key Findings**
-2. **Refactoring & Modularization Proposals**
-3. **Pattern Suggestions**
-4. **Risks & Anti-Patterns**
+---
 
-> _Keep feedback **brief**, **actionable**, and **technology-agnostic**._
+**🧠 Optional Analytical Lenses**
+
+- Declarative vs. Imperative usage
+- Convention over configuration
+- Interface-first design
+- Complexity hotspots (temporal/spatial)
+
+---
+
+**📦 Deliverables**
+
+- 🔍 **Key Findings**: Strengths, weaknesses, design debt
+- 🧱 **Refactoring Plan**: Modularization strategies
+- 🧩 **Pattern Recommendations**: Mapped improvements
+- ⚠️ **Risks**: Identified anti-patterns
+- 🧭 **Core vs. Extension Map**: Clear system delineation
+
+---
+
+**📐 Engineering Principles Reference**
+
+- **Modularity** · **Decoupling** · **SoC** · **KISS** · **DRY** · **YAGNI** · **Fail-Fast** · **Convention over Configuration**
