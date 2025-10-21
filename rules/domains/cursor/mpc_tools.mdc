@@ -1,0 +1,64 @@
+---
+alwaysApply: true
+---
+
+# **Cursor AI – Standard Rules**
+
+- **Context7 → knowledge and documentation**
+- **Filesystem → persistent files, backups, media, and directory operations**
+
+## **General Guidelines**
+
+- **Separation of Concerns:**
+
+  - Use **context7** exclusively for documentation and knowledge queries.
+  - Use **Filesystem** exclusively for file storage, backups, and metadata.
+
+- **Efficiency:**
+
+  - Batch filesystem operations when possible.
+  - Lazy load large files and datasets.
+  - Cache frequently accessed library docs from context7 if reused multiple times.
+
+## **(MPC) context7 – When to Use**
+
+- Fetch **latest documentation** for a specific library.
+- Retrieve **version-specific information** for a library.
+- Access **code examples** or **usage patterns** for a library.
+
+**Built-in commands:**
+
+- `resolve-library-id`: Resolves a general library name into a Context7-compatible library ID.
+- `get-library-docs`: Fetches documentation for a library using a Context7-compatible library ID.
+
+**Best Practices:**
+
+- Use context7 for **knowledge retrieval only**, not for storing raw files.
+- Always resolve the library ID before fetching documentation.
+- Use version-specific or module-specific queries to reduce irrelevant results.
+
+---
+
+## **(MPC) Filesystem – When to Use**
+
+**Purpose:** Persistent storage and file management service.
+
+**Use the Filesystem when:**
+
+- Storing or retrieving **text files** → `read_text_file`, `write_file`, `edit_file`.
+- Storing or retrieving **media files (image/audio)** → `read_media_file`.
+- Managing **multiple files simultaneously** → `read_multiple_files`.
+- Creating or ensuring **directory structure exists** → `create_directory`.
+- Listing **directory contents** → `list_directory`, `list_directory_with_sizes`.
+- Moving or renaming files/directories → `move_file`.
+- Searching files recursively → `search_files`.
+- Generating **directory trees** → `directory_tree`.
+- Accessing **file metadata** → `get_file_info`.
+- Viewing all **allowed directories** → `list_allowed_directories`.
+
+**Best Practices:**
+
+- Always check for file existence and permissions before read/write.
+- Use `edit_file` dry run mode first to preview changes.
+- Separate temporary vs persistent files for workflow clarity.
+- Use directory structures consistently
